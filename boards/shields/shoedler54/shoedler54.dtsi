@@ -10,23 +10,6 @@
         compatible = "zmk,kscan-gpio-matrix";
         diode-direction = "col2row";
         wakeup-source;
-
-        row-gpios
-            = <&pro_micro 2  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // ergogen r4
-            , <&pro_micro 5  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // ergogen r3
-            , <&pro_micro 4  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // ergogen r2
-            , <&pro_micro 3  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // ergogen r1
-            , <&pro_micro 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // ergogen r0
-            ;
-
-        col-gpios
-            = <&pro_micro 15 GPIO_ACTIVE_HIGH> // ergogen c0
-            , <&pro_micro 18 GPIO_ACTIVE_HIGH> // ergogen c1
-            , <&pro_micro 16 GPIO_ACTIVE_HIGH> // ergogen c2
-            , <&pro_micro 8  GPIO_ACTIVE_HIGH> // ergogen c3
-            , <&pro_micro 9  GPIO_ACTIVE_HIGH> // ergogen c4
-            , <&pro_micro 19 GPIO_ACTIVE_HIGH> // ergogen c5
-            ;
     };
 
     default_transform: keymap_transform_0 {
