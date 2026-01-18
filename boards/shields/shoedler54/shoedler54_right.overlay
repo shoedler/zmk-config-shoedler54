@@ -18,3 +18,7 @@
         , <&pro_micro 19 GPIO_ACTIVE_HIGH> // ergogen c5 "Inner"
         ;
 };
+
+&default_transform {
+    col-offset = <6>;
+};
